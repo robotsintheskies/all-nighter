@@ -364,29 +364,34 @@ background-color: #f7be3c;
 /* CONTENT */
 
 #content-feature{
-	padding: 20px 0 40px 85px;
+	padding: 20px 40px 40px 85px;
 	background-image: url(../images/wind-farm-purple.png);
 	background-repeat: true;
-	width:1870px;
+	width:2300px;
 }
 
 
 #content{
-	padding: 40px 0 40px 85px;
-
-	
-
-}
-
-#content-feature-title{
-	width: 400px;
-	color: #372662;
-	float:left;
-
 }
 
 #content-feature-bg{
 	height:100px;
+}
+
+#quote{
+	float:right;
+	margin-right: 50%;
+	width: 300px;
+	height:150px;
+	color:#fff;
+}
+
+#content-feature-title{
+	width: 500px;
+	color: #372662;
+	float:left;
+	padding: 40px 0 40px 85px;
+
 }
 
 #content-author p{
@@ -394,26 +399,18 @@ background-color: #f7be3c;
 	font-size: 22px;
 	text-decoration: underline;
 	color: #000;
+	position: relative;
 }
 
-#quote{
-	float:right;
-	margin-right: 600px;
-	width: 300px;
-	height:150px;
-	color:#fff;
-}
-
-#lead{
+.lead{
 	font-family: 'georgia';
 	font-weight: bold;
 	font-size: 12px;
 }
 
 #article{
-position: relative;
-z-index: 10;
-float: left;
+padding: 40px 30px 40px 0px;
+width: 2300px;
 }
 
 .columndemo
@@ -426,7 +423,6 @@ float: left;
 	
 	column-count: 4;
 	column-gap: 30px;
-	
-	width:1870px;
+
 	text-align: left;
 }
