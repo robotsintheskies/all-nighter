@@ -1,3 +1,29 @@
+/* LESS CSS VARIABLES */
+
+@news: #372662;
+
+@spotlight: #ed1457;
+
+@opinion: #f7923f;
+
+@lifestyle: #53c2bc;
+
+@events: #00b26e;
+
+.nav-spacing(@color) {
+	border: solid @color;
+	border-width: 5px 0 0  0;
+}
+
+.hover-colors(@color) {
+	width:260px;
+	height: 30px;
+	position: absolute;
+	z-index: 10;
+	background-color: @color;
+}
+
+
 /* GLOBAL */
 h1{
 	font-family: 'NeubauGrotesk-85Schwer';
@@ -102,32 +128,32 @@ body{
 }
 
 #news:hover{
-background-color: #372662;
+background-color: @news;
 
 }
 
 #spotlight:hover {
-background-color: #ed1457;
+background-color: @spotlight;
 
 }
 
 #opinion:hover{
-background-color:  #f7923f;
+background-color:  @opinion;
 
 }
 
 #lifestyle:hover{
-background-color:  #53c2bc;
+background-color:  @lifestyle;
 
 }
 
 #events:hover{
-background-color:  #00b26e;
+background-color:  @events;
 	
 }
 
 #inspiration:hover{
-background-color:  #f7be3c;
+background-color:  @inspiration;
 
 
 }
@@ -154,38 +180,28 @@ background-color:  #f7be3c;
 }
 
 #news-hr{
-border: solid #372662;
-border-width: 5px 0 0  0;
+.nav-spacing(@news);
 
 }
 
 #spotlight-hr{
-
-border: solid #ed1457;
-border-width: 5px 0 0  0;
+.nav-spacing(@spotlight);
 }
 
 #opinion-hr{
-
-border: solid #f7923f;
-border-width: 5px 0 0  0;
+.nav-spacing(@opinion);
 }
 
 #lifestyle-hr{
-
-border: solid #53c2bc;
-border-width: 5px 0 0  0;
+.nav-spacing(@lifestyle);
 }
 
 #events-hr{
-
-border: solid #00b26e;
-border-width: 5px 0 0  0;
+.nav-spacing(@events);
 }
 
 #inspiration-hr{
-border: solid #f7be3c;
-border-width: 5px 0 0  0;
+.nav-spacing(@inspiration);
 }
 
 /* FEATURE */
@@ -252,92 +268,49 @@ white-space:normal;
 }
 
 #news{
-color: #372662;
+color: @news;
 
 }
 .post:hover #news-bar{
-width:260px;
-height: 30px;
-top: 0;
-left: 0;
-position: absolute;
- z-index: 10;
- background-color: #372662;
-
-
+.hover-colors(@news);
 }
 
 #spotlight{
-color: #ed1457;
+color: @spotlight;
 
 }
 .post:hover #spotlight-bar{
-width:260px;
-height: 30px;
-
-position: absolute;
- z-index: 10;
-background-color: #ed1457;
-
-
+.hover-colors(@spotlight);
 }
 
 #opinion{
-color:  #f7923f;
+color:  @opinion;
 }
 
 .post:hover #opinion-bar{
-width:260px;
-height: 30px;
-
-position: absolute;
- z-index: 10;
-background-color: #f7923f;
-
-
+.hover-colors(@opinion);
 }
 
 #lifestyle{
-color:  #53c2bc;
+color: @lifestyle;
 
 }
 .post:hover #lifestyle-bar{
-width:260px;
-height: 30px;
-
-position: absolute;
- z-index: 10;
-background-color: #53c2bc;
-
-
+.hover-colors(@lifestyle);
 }
 
 #events{
-color:  #00b26e;
+color: @events;
 	
 }
 .post:hover #events-bar{
-width:260px;
-height: 30px;
-
-position: absolute;
- z-index: 10;
-background-color: #00b26e;
-
-
+.hover-colors(@events);
 }
 
 #inspiration{
-color:  #f7be3c;
+color: @inspiration;
 }
 
 .post:hover #inspiration-bar{
-width:260px;
-height: 30px;
-
-position: absolute;
- z-index: 10;
-background-color: #f7be3c;
-
-
+.hover-colors(@inspiration);
 }
