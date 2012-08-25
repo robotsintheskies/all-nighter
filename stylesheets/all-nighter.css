@@ -10,7 +10,7 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 */
 /* LESS CSS VARIABLES */
 /* GLOBAL */
-/* line 41, ../sass/all-nighter.scss */
+/* line 45, ../sass/all-nighter.scss */
 h1 {
   font-family: 'NeubauGrotesk-85Schwer';
   font-size: 50px;
@@ -18,7 +18,7 @@ h1 {
   text-transform: uppercase;
 }
 
-/* line 48, ../sass/all-nighter.scss */
+/* line 52, ../sass/all-nighter.scss */
 h2 {
   font-family: 'NeubauGrotesk-75Fett';
   font-size: 57px;
@@ -26,7 +26,7 @@ h2 {
   text-transform: uppercase;
 }
 
-/* line 55, ../sass/all-nighter.scss */
+/* line 59, ../sass/all-nighter.scss */
 h3 {
   font-family: 'NeubauGrotesk-75Fett';
   font-size: 432x;
@@ -34,14 +34,14 @@ h3 {
   text-transform: uppercase;
 }
 
-/* line 62, ../sass/all-nighter.scss */
+/* line 66, ../sass/all-nighter.scss */
 h4 {
   font-family: 'Georgia';
   font-size: 24px;
   font-style: italic;
 }
 
-/* line 68, ../sass/all-nighter.scss */
+/* line 72, ../sass/all-nighter.scss */
 h5 {
   font-family: 'NeubauGrotesk-85Schwer';
   font-size: 60px;
@@ -49,10 +49,40 @@ h5 {
   text-transform: uppercase;
 }
 
-/* line 75, ../sass/all-nighter.scss */
+/* line 79, ../sass/all-nighter.scss */
 p {
   font-family: 'Georgia';
   font-size: 14px;
+}
+
+/* line 85, ../sass/all-nighter.scss */
+.news {
+  color: #372662;
+}
+
+/* line 89, ../sass/all-nighter.scss */
+.spotlight {
+  color: #ed1457;
+}
+
+/* line 93, ../sass/all-nighter.scss */
+.opinion {
+  color: #f7923f;
+}
+
+/* line 97, ../sass/all-nighter.scss */
+.lifestyle {
+  color: #53c2bc;
+}
+
+/* line 101, ../sass/all-nighter.scss */
+.events {
+  color: #00b26e;
+}
+
+/* line 105, ../sass/all-nighter.scss */
+.inspiration {
+  color: #f7be3c;
 }
 
 /* FONTS */
@@ -87,26 +117,26 @@ p {
 }
 
 /* HEADER */
-/* line 118, ../sass/all-nighter.scss */
+/* line 148, ../sass/all-nighter.scss */
 #header {
   height: 175px;
   width: 100%;
 }
 
-/* line 123, ../sass/all-nighter.scss */
+/* line 153, ../sass/all-nighter.scss */
 #title-rule {
   padding-bottom: 15px;
   border: solid #39393a;
   border-width: 7px 0 0  0;
 }
 
-/* line 129, ../sass/all-nighter.scss */
+/* line 159, ../sass/all-nighter.scss */
 #blog-title {
   float: left;
   padding-left: 85px;
 }
 
-/* line 134, ../sass/all-nighter.scss */
+/* line 165, ../sass/all-nighter.scss */
 #home {
   font-family: 'NeubauGrotesk-55Normal';
   font-size: 32px;
@@ -114,122 +144,123 @@ p {
   color: #626366;
 }
 
-/* line 141, ../sass/all-nighter.scss */
+/* line 172, ../sass/all-nighter.scss */
 #issue {
-  padding-top: 15px;
   font-family: 'Helvetica';
   font-size: 15px;
+  margin: 5;
 }
 
-/* line 147, ../sass/all-nighter.scss */
+/* line 179, ../sass/all-nighter.scss */
 #date {
-  padding-top: 5px;
+  padding-top: -5px;
 }
 
-/* line 151, ../sass/all-nighter.scss */
-#nav {
-  float: left;
+/* NAV */
+/* line 185, ../sass/all-nighter.scss */
+.nav {
   padding-left: 200px;
 }
 
-/* line 156, ../sass/all-nighter.scss */
-.nav-button {
-  float: left;
-  width: 80px;
+/* line 189, ../sass/all-nighter.scss */
+.nav ul {
+  list-style-type: none;
+  text-align: center;
+  padding-top: 3px;
+}
+
+/* line 195, ../sass/all-nighter.scss */
+.nav ul li {
+  display: inline;
+  padding: 0 20px 0 20px;
+  margin-bottom: 10px;
   padding-bottom: 10px;
+  margin-left: -4px;
 }
 
-/* line 162, ../sass/all-nighter.scss */
-#news:hover {
-  background-color: #372662;
-}
-
-/* line 167, ../sass/all-nighter.scss */
-#spotlight:hover {
-  background-color: #ed1457;
-}
-
-/* line 172, ../sass/all-nighter.scss */
-#opinion:hover {
-  background-color: #f7923f;
-}
-
-/* line 177, ../sass/all-nighter.scss */
-#lifestyle:hover {
-  background-color: #53c2bc;
-}
-
-/* line 182, ../sass/all-nighter.scss */
-#events:hover {
-  background-color: #00b26e;
-}
-
-/* line 187, ../sass/all-nighter.scss */
-#inspiration:hover {
-  background-color: #f7be3c;
-}
-
-/* line 193, ../sass/all-nighter.scss */
-.nav-link {
+/* line 204, ../sass/all-nighter.scss */
+.nav ul li a {
   font-family: 'Helvetica';
   font-size: 10px;
   text-transform: uppercase;
   color: #9d9fa1;
   text-align: center;
   text-decoration: none;
-  position: relative;
-  display: block;
 }
 
-/* line 204, ../sass/all-nighter.scss */
-.nav-button:hover .nav-link {
+/* line 213, ../sass/all-nighter.scss */
+.nav ul li:hover a {
   color: #fff;
 }
 
-/* line 209, ../sass/all-nighter.scss */
-.nav-rule {
-  margin: 0px;
-  padding-bottom: 5px;
+/* line 217, ../sass/all-nighter.scss */
+.nav .news:hover {
+  background-color: #372662;
 }
 
-/* line 214, ../sass/all-nighter.scss */
-#news-hr {
-  border: solid #372662;
-  border-width: 5px 0 0  0;
+/* line 221, ../sass/all-nighter.scss */
+.nav .spotlight:hover {
+  background-color: #ed1457;
 }
 
-/* line 219, ../sass/all-nighter.scss */
-#spotlight-hr {
-  border: solid #ed1457;
-  border-width: 5px 0 0  0;
+/* line 225, ../sass/all-nighter.scss */
+.nav .opinion:hover {
+  background-color: #f7923f;
 }
 
-/* line 223, ../sass/all-nighter.scss */
-#opinion-hr {
-  border: solid #f7923f;
-  border-width: 5px 0 0  0;
+/* line 229, ../sass/all-nighter.scss */
+.nav .lifestyle:hover {
+  background-color: #53c2bc;
 }
 
-/* line 227, ../sass/all-nighter.scss */
-#lifestyle-hr {
-  border: solid #53c2bc;
-  border-width: 5px 0 0  0;
+/* line 233, ../sass/all-nighter.scss */
+.nav .events:hover {
+  background-color: #00b26e;
 }
 
-/* line 231, ../sass/all-nighter.scss */
-#events-hr {
-  border: solid #00b26e;
-  border-width: 5px 0 0  0;
+/* line 237, ../sass/all-nighter.scss */
+.nav .inspiration:hover {
+  background-color: #f7be3c;
 }
 
-/* line 235, ../sass/all-nighter.scss */
-#inspiration-hr {
-  border: solid #f7be3c;
-  border-width: 5px 0 0  0;
+/* line 241, ../sass/all-nighter.scss */
+.nav .news {
+  border-top: solid #372662;
+  border-width: 7px 0 0  0;
+}
+
+/* line 245, ../sass/all-nighter.scss */
+.nav .spotlight {
+  border-top: solid #ed1457;
+  border-width: 7px 0 0  0;
+}
+
+/* line 249, ../sass/all-nighter.scss */
+.nav .opinion {
+  border-top: solid #f7923f;
+  border-width: 7px 0 0  0;
+}
+
+/* line 253, ../sass/all-nighter.scss */
+.nav .lifestyle {
+  border-top: solid #53c2bc;
+  border-width: 7px 0 0  0;
+}
+
+/* line 257, ../sass/all-nighter.scss */
+.nav .events {
+  border-top: solid #00b26e;
+  border-width: 7px 0 0  0;
+}
+
+/* line 261, ../sass/all-nighter.scss */
+.nav .inspiration {
+  border-top: solid #f7be3c;
+  border-width: 7px 0 0  0;
 }
 
 /* FEATURE */
-/* line 241, ../sass/all-nighter.scss */
+/* line 267, ../sass/all-nighter.scss */
 #feature {
   padding: 40px 0 20px 85px;
   background-image: url(../images/wind-farm-purple.png);
@@ -237,20 +268,20 @@ p {
   width: 1870px;
 }
 
-/* line 248, ../sass/all-nighter.scss */
+/* line 274, ../sass/all-nighter.scss */
 #feature-title {
   width: 500px;
   color: #fff;
 }
 
-/* line 253, ../sass/all-nighter.scss */
+/* line 279, ../sass/all-nighter.scss */
 #author {
   padding-top: 10px;
   color: #fff;
 }
 
 /* POST FEATURE */
-/* line 259, ../sass/all-nighter.scss */
+/* line 285, ../sass/all-nighter.scss */
 #post-wrapper {
   margin: 40px 0 0 85px;
   width: 100%;
@@ -258,133 +289,95 @@ p {
   position: absolute;
 }
 
-/* line 267, ../sass/all-nighter.scss */
+/* line 292, ../sass/all-nighter.scss */
 .post {
   padding-right: 40px;
   display: inline-block;
   width: 300px;
 }
 
-/* line 273, ../sass/all-nighter.scss */
-.post-last {
-  float: right;
-}
-
-/* line 277, ../sass/all-nighter.scss */
-.post-hero {
+/* line 298, ../sass/all-nighter.scss */
+.post img {
   position: relative;
 }
 
-/* line 281, ../sass/all-nighter.scss */
-.title {
+/* line 302, ../sass/all-nighter.scss */
+.post h3 {
   padding-top: 10px;
 }
 
-/* line 285, ../sass/all-nighter.scss */
+/* line 306, ../sass/all-nighter.scss */
 .author {
   font-family: 'Helvetica';
   color: #6c7370;
   margin-bottom: 0px;
+  text-transform: uppercase;
 }
 
-/* line 291, ../sass/all-nighter.scss */
-.author p {
-  margin-bottom: 0px;
-}
-
-/* line 296, ../sass/all-nighter.scss */
+/* line 313, ../sass/all-nighter.scss */
 .explanation {
   font-family: 'Helvetica';
   color: #939597;
   white-space: normal;
+  text-transform: uppercase;
 }
 
-/* line 302, ../sass/all-nighter.scss */
-#news {
-  color: #372662;
-}
-
-/* line 306, ../sass/all-nighter.scss */
-.post:hover #news-bar {
+/* line 321, ../sass/all-nighter.scss */
+.post:hover .news-bar {
   width: 260px;
-  height: 30px;
+  height: 25px;
   position: absolute;
   z-index: 10;
   background-color: #372662;
 }
 
-/* line 310, ../sass/all-nighter.scss */
-#spotlight {
-  color: #ed1457;
-}
-
-/* line 314, ../sass/all-nighter.scss */
-.post:hover #spotlight-bar {
+/* line 325, ../sass/all-nighter.scss */
+.post:hover .spotlight-bar {
   width: 260px;
-  height: 30px;
+  height: 25px;
   position: absolute;
   z-index: 10;
   background-color: #ed1457;
 }
 
-/* line 318, ../sass/all-nighter.scss */
-#opinion {
-  color: #f7923f;
-}
-
-/* line 322, ../sass/all-nighter.scss */
-.post:hover #opinion-bar {
+/* line 329, ../sass/all-nighter.scss */
+.post:hover .opinion-bar {
   width: 260px;
-  height: 30px;
+  height: 25px;
   position: absolute;
   z-index: 10;
   background-color: #f7923f;
 }
 
-/* line 326, ../sass/all-nighter.scss */
-#lifestyle {
-  color: #53c2bc;
-}
-
-/* line 330, ../sass/all-nighter.scss */
-.post:hover #lifestyle-bar {
+/* line 333, ../sass/all-nighter.scss */
+.post:hover .lifestyle-bar {
   width: 260px;
-  height: 30px;
+  height: 25px;
   position: absolute;
   z-index: 10;
   background-color: #53c2bc;
 }
 
-/* line 334, ../sass/all-nighter.scss */
-#events {
-  color: #00b26e;
-}
-
-/* line 338, ../sass/all-nighter.scss */
-.post:hover #events-bar {
+/* line 337, ../sass/all-nighter.scss */
+.post:hover .events-bar {
   width: 260px;
-  height: 30px;
+  height: 25px;
   position: absolute;
   z-index: 10;
   background-color: #00b26e;
 }
 
-/* line 342, ../sass/all-nighter.scss */
-#inspiration {
-  color: #f7be3c;
-}
-
-/* line 346, ../sass/all-nighter.scss */
-.post:hover #inspiration-bar {
+/* line 341, ../sass/all-nighter.scss */
+.post:hover .inspiration-bar {
   width: 260px;
-  height: 30px;
+  height: 25px;
   position: absolute;
   z-index: 10;
   background-color: #f7be3c;
 }
 
 /* CONTENT */
-/* line 352, ../sass/all-nighter.scss */
+/* line 347, ../sass/all-nighter.scss */
 #content-feature {
   padding: 20px 40px 60px 85px;
   background-image: url(../images/wind-farm-purple.png);
@@ -392,12 +385,12 @@ p {
   width: 2300px;
 }
 
-/* line 362, ../sass/all-nighter.scss */
+/* line 357, ../sass/all-nighter.scss */
 #content-feature-bg {
   height: 100px;
 }
 
-/* line 366, ../sass/all-nighter.scss */
+/* line 361, ../sass/all-nighter.scss */
 #quote {
   float: right;
   margin-right: 20%;
@@ -406,7 +399,7 @@ p {
   color: #fff;
 }
 
-/* line 374, ../sass/all-nighter.scss */
+/* line 369, ../sass/all-nighter.scss */
 #content-feature-title {
   width: 500px;
   color: #372662;
@@ -414,7 +407,7 @@ p {
   padding: 40px 0 50px 85px;
 }
 
-/* line 382, ../sass/all-nighter.scss */
+/* line 377, ../sass/all-nighter.scss */
 #content-author p {
   font-family: 'NeubauGrotesk-75Fett';
   font-size: 22px;
@@ -423,7 +416,7 @@ p {
   position: relative;
 }
 
-/* line 390, ../sass/all-nighter.scss */
+/* line 385, ../sass/all-nighter.scss */
 #article:first-line {
   text-transform: uppercase;
   font-family: 'georgia';
@@ -431,13 +424,13 @@ p {
   font-size: 15px;
 }
 
-/* line 398, ../sass/all-nighter.scss */
+/* line 393, ../sass/all-nighter.scss */
 #article {
   padding: 40px 30px 40px 0px;
   width: 2300px;
 }
 
-/* line 404, ../sass/all-nighter.scss */
+/* line 399, ../sass/all-nighter.scss */
 .columndemo {
   -moz-column-count: 4;
   -moz-column-gap: 30px;

@@ -11,6 +11,8 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
 /* LESS CSS VARIABLES */
 
+
+
 $news: #372662;
 
 $spotlight: #ed1457;
@@ -24,17 +26,19 @@ $events: #00b26e;
 $inspiration: #f7be3c;
 
 @mixin nav-spacing($color) {
-	border: solid $color;
-	border-width: 5px 0 0  0;
+	border-top: solid $color;
+	border-width: 7px 0 0  0;
 }
 
 @mixin hover-colors($color) {
 	width:260px;
-	height: 30px;
+	height: 25px;
 	position: absolute;
 	z-index: 10;
 	background-color: $color;
 }
+
+
 
 
 /* GLOBAL */
@@ -76,6 +80,32 @@ p{
 	font-family: 'Georgia';
 	font-size: 14px;
 }
+
+
+.news{
+	color: $news;
+}
+
+.spotlight{
+	color: $spotlight;
+}
+
+.opinion{
+	color:  $opinion;
+}
+
+.lifestyle{
+	color: $lifestyle;
+}
+
+.events{
+	color: $events;	
+}
+
+.inspiration{
+	color: $inspiration;
+}
+
 
 
 /* FONTS */
@@ -129,6 +159,7 @@ body{
 #blog-title{
 	float: left;
 	padding-left: 85px;
+	
 }
 
 #home{
@@ -139,212 +170,176 @@ body{
 }
 
 #issue{
-	padding-top:15px;
+	
 	font-family: 'Helvetica';
 	font-size: 15px;
+	margin: 5;
 }
 
 #date{
-	padding-top: 5px;
+	padding-top: -5px;	
 }
 
-#nav{
-	float:left;
+/* NAV */
+
+.nav{
 	padding-left: 200px;
 }
 
-.nav-button{
-	float:left;
-	width:80px;
+.nav ul{
+	list-style-type: none;
+	text-align: center;
+	padding-top: 3px;
+}
+
+.nav ul li { 
+	display: inline; 
+	padding: 0 20px 0 20px;
+	margin-bottom: 10px;
 	padding-bottom: 10px;
-}
-
-#news:hover{
-background-color: $news;
+	margin-left: -4px;
 
 }
 
-#spotlight:hover {
-background-color: $spotlight;
-
-}
-
-#opinion:hover{
-background-color:  $opinion;
-
-}
-
-#lifestyle:hover{
-background-color:  $lifestyle;
-
-}
-
-#events:hover{
-background-color:  $events;
-	
-}
-
-#inspiration:hover{
-background-color:  $inspiration;
-
-
-}
-
-.nav-link{
+.nav ul li a{
 	font-family: 'Helvetica';
 	font-size: 10px;
 	text-transform: uppercase;
 	color: #9d9fa1;
 	text-align: center;
 	text-decoration: none;
-	position: relative;
-	display: block;
 }
 
-.nav-button:hover .nav-link{
+.nav ul li:hover a{
 	color:#fff;
 }
 
-
-.nav-rule{
-	margin: 0px;
-	padding-bottom: 5px;
+.nav .news:hover{
+	background-color: $news;
 }
 
-#news-hr{
-@include nav-spacing($news);
-
+.nav .spotlight:hover {
+	background-color: $spotlight;
 }
 
-#spotlight-hr{
-@include nav-spacing($spotlight);
+.nav .opinion:hover{
+	background-color:  $opinion;
 }
 
-#opinion-hr{
-@include nav-spacing($opinion);
+.nav .lifestyle:hover{
+	background-color:  $lifestyle;
 }
 
-#lifestyle-hr{
-@include nav-spacing($lifestyle);
+.nav .events:hover{
+	background-color:  $events;
 }
 
-#events-hr{
-@include nav-spacing($events);
+.nav .inspiration:hover{
+	background-color:  $inspiration;
 }
 
-#inspiration-hr{
-@include nav-spacing($inspiration);
+.nav .news{
+	@include nav-spacing($news);
+}
+
+.nav .spotlight{
+	@include nav-spacing($spotlight);
+}
+
+.nav .opinion{
+	@include nav-spacing($opinion);
+}
+
+.nav .lifestyle{
+	@include nav-spacing($lifestyle);
+}
+
+.nav .events{
+	@include nav-spacing($events);
+}
+
+.nav .inspiration{
+	@include nav-spacing($inspiration);
 }
 
 /* FEATURE */
 
 #feature{
-padding: 40px 0 20px 85px;
-background-image: url(../images/wind-farm-purple.png);
-background-repeat: true;
-width:1870px;
+	padding: 40px 0 20px 85px;
+	background-image: url(../images/wind-farm-purple.png);
+	background-repeat: true;
+	width:1870px;
 }
 
 #feature-title{
-width: 500px;
-color: #fff;
+	width: 500px;
+	color: #fff;
 }
 
 #author{
-padding-top: 10px;
-color: #fff;
+	padding-top: 10px;
+	color: #fff;
 }
 
 /* POST FEATURE */
 #post-wrapper{
-margin: 40px 0 0 85px;
-width:100%;
-
-  white-space:nowrap;
-  position: absolute;
+	margin: 40px 0 0 85px;
+	width:100%;
+	white-space:nowrap;
+	position: absolute;
 }
 
 .post{
-padding-right: 40px;
- display: inline-block;
- width: 300px;
+	padding-right: 40px;
+	display: inline-block;
+	width: 300px;
 }
 
-.post-last{
-	float:right;
+.post img{
+	position: relative;
 }
 
-.post-hero{
-position: relative;
-}
-
-.title{
-padding-top: 10px;
+.post h3{
+	padding-top: 10px;
 }
 
 .author{
-font-family: 'Helvetica';
-color: #6c7370;
-margin-bottom:0px;
+	font-family: 'Helvetica';
+	color: #6c7370;
+	margin-bottom:0px;
+	text-transform: uppercase;
 }
-
-.author p{
-margin-bottom:0px;
-}
-
 
 .explanation{
-font-family: 'Helvetica';
-color: #939597;
-white-space:normal;
+	font-family: 'Helvetica';
+	color: #939597;
+	white-space:normal;
+	text-transform: uppercase;
 }
 
-#news{
-color: $news;
 
-}
-.post:hover #news-bar{
-@include hover-colors($news);
+.post:hover .news-bar{
+	@include hover-colors($news);
 }
 
-#spotlight{
-color: $spotlight;
-
-}
-.post:hover #spotlight-bar{
-@include hover-colors($spotlight);
+.post:hover .spotlight-bar{
+	@include hover-colors($spotlight);
 }
 
-#opinion{
-color:  $opinion;
+.post:hover .opinion-bar{
+	@include hover-colors($opinion);
 }
 
-.post:hover #opinion-bar{
-@include hover-colors($opinion);
+.post:hover .lifestyle-bar{
+	@include hover-colors($lifestyle);
 }
 
-#lifestyle{
-color: $lifestyle;
-
-}
-.post:hover #lifestyle-bar{
-@include hover-colors($lifestyle);
+.post:hover .events-bar{
+	@include hover-colors($events);
 }
 
-#events{
-color: $events;
-	
-}
-.post:hover #events-bar{
-@include hover-colors($events);
-}
-
-#inspiration{
-color: $inspiration;
-}
-
-.post:hover #inspiration-bar{
-@include hover-colors($inspiration);
+.post:hover .inspiration-bar{
+	@include hover-colors($inspiration);
 }
 
 /* CONTENT */
@@ -396,8 +391,8 @@ color: $inspiration;
 }
 
 #article{
-padding: 40px 30px 40px 0px;
-width: 2300px;
+	padding: 40px 30px 40px 0px;
+	width: 2300px;
 }
 
 .columndemo
